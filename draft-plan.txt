@@ -1,0 +1,89 @@
+
+0. Route speedtest via nat-33.
+
+1. Run zabbix/tsdb docker for eaton on px4.
+2. Add proxmoxes monintoring to it.
+3. change TR ver at delta.
+4. nff-go dnat-snat, gobgp 10.168.42.251
+5. PMG smtp via dnat from delta.
+6. WebClient bu pinbox, notmuch.
+7. Try with netbox again.
+
+21.11.2023 - Continue auto for cmrd.
+
+-zabbix-server
+zabbix-proxy-sqlite3
+-zabbix-web-nginx-pgsql
+-zabbix-agent
+zabbix-snmptraps
+zabbix-java-gateway
+zabbix-web-service
+
+
+
+systemctl enable getty@ttyS0.service
+
+XDG_RUNTIME_DIR=/tmp/ WLR_BACKENDS=headless WLR_LIBINPUT_NO_DEVICES=1 sway
+swaymsg --socket /tmp/sway-ipc.*.sock exec 'WAYLAND_DISPLAY=wayland-1 wayvnc -C ~/.config/wayvnc/config 0.0.0.0'
+swaymsg --socket /tmp/sway-ipc.*.sock exec 'WAYLAND_DISPLAY=wayland-1 wayvnc 0.0.0.0'
+
+output HEADLESS-1 resolution 1920x1080
+
+
+L0 - dhcp server (Gravity Etcd);
+Replace sentry by self-hosted AppLogger(https://github.com/getsentry/self-hosted);
+Controlled by FidsAdmin (Making A Dashboard With HTMX & Go);
+Retrieve testing schemes from umputun/spot as Deploing Production to Proxmox;
+
+L1 - Compile Dockerized zbx/pgsql;
+Connect it with NetBox(docker ?) by api;
+Add to monitor PC hosts - Zbx(looped), Proxmox,Netbox, gravity in Zbx.
+
+L2 - Create ipxe LFS with local mounted rootfs as loop file at windows partition.
+Add It to monitor as linux PC agent.
+Name it as fids.
+
+L3 - FidsAdmin connect with NextBox and fids.
+
+18032024 - mix for v999, .208 nmap scan to nextbox.
+Before set .208 need to 1.raise netbox; 2. Add .208 to netbox; 3. Integrate dhcpd with netbox.
+Before set vlans to switch port.
+
+L4 - Remake FIDS webClient. Umputun - 1 Day, others - 3 Days.Onelis - 2 months.
+Tabs for Domestic, Ints, Cargo schedules;
+RBAC by Etcd, AD;
+Connect webClient FidsAdmin API inventory;
+Different resolutions based on inventoty Type;
+Add webClient to sentry;
+ OR
+ https://www.digitalocean.com/community/tutorials/an-introduction-to-metrics-monitoring-and-alerting
+ https://github.com/open-telemetry/opentelemetry-collector
+ https://github.com/SigNoz/signoz-otel-collector
+ https://github.com/SigNoz
+ https://github.com/uptrace/uptrace, 
+Auto restore by crash.
+Add It to monitor as linux PC agent.
+
+L999 - Make routine tasks by one click(but prefer chatting).
+Underline infra and steps linked as RPA concept.
+
+https://www.hyperwriteai.com/pricing: Transform your wishes into commands.
+
+https://github.com/Magisk-Modules-Repo/adb-ndk
+https://habr.com/ru/articles/478288/
+https://vgev.ru/kak-projti-safetynet-na-rutirovannom-pixel-7a/
+https://github.com/topjohnwu/Magisk/blob/master/docs/install.md
+
+https://www.intel.com/content/www/us/en/gaming/resources/game-server.html
+https://www.xtremetop100.com/
+https://www.hostinger.com/minecraft-server-hosting
+https://github.com/orgs/nitrado/repositories
+https://www.hostinger.com/tutorials/games-with-dedicated-servers
+https://www.intel.com/content/www/us/en/customer-spotlight/stories/gportal-customer-story.html
+https://www.reddit.com/r/ARK/comments/ism1l3/costs_for_private_server/
+https://habr.com/ru/articles/799363/ ARK
+https://habr.com/ru/articles/704706/ Match-3
+
+https://habr.com/ru/articles/502374/ FT8
+
+
