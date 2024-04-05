@@ -1,0 +1,13 @@
+01. Totalness - NIF, 29 tasks.
+02. Mail domain docker.
+03. wayvnc headless browser.
+04. ET200S.
+05. Arduino, tubes.
+06. HTMX complete learning AnthonyGG.
+
+07. RemoteAutomation, umputun SPOT, netbox, zabbix.
+For BNGs, Airport VMs.
+
+08. Infinera snmp zabbix.
+09. Airport Zabbix.
+10. Load Windows7 from linux host in qemu.

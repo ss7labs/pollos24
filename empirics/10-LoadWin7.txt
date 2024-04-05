@@ -1,0 +1,17 @@
+Research - 
+1. Create loop device file from win7.raw image on mainChe PC.
+2. Load Win7 loop device in qemu on mainChe PC.
+3. Load Win7 loop in qemu SDL on arch without wayland on miniarch.
+4. Load Win7 loop in qemu SDL on arch with wayland on miniarch.
+5. Prepare arch with qemu loop device for ProdEnv.
+
+ProdEnv
+1. Boot grub4dos with Choose Boot Image Backend.
+2. Boot arch loop device(R5) via grub4dos from Win7 hard disk.
+3. Run qemu with grahics determined at R3,4 steps.
+4. Quemu guest should be Win7 loop device.
+
+In summary - 
+01 - 2 loop files at Wni7 drive - 1) arch; 2) Win7.
+02 - May be need patch grub4dos Choose Boot Image Backend.
+
