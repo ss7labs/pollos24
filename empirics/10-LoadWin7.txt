@@ -1,5 +1,7 @@
 Research - 
 1. Create loop device file from win7.raw image on mainChe PC.
+~/src/wayland-kiosk-alpine/loop-device-grub.txt
+
 2. Load Win7 loop device in qemu on mainChe PC.
 3. Load Win7 loop in qemu SDL on arch without wayland on miniarch.
 4. Load Win7 loop in qemu SDL on arch with wayland on miniarch.
@@ -13,5 +15,5 @@ ProdEnv
 
 In summary - 
 01 - 2 loop files at Wni7 drive - 1) arch; 2) Win7.
-02 - May be need patch grub4dos Choose Boot Image Backend.
+02 - May be need patch grub4dos for Choose Boot Image Backend.
 
