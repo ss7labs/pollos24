@@ -9,6 +9,9 @@ Research -
 
 ProdEnv
 1. Boot grub4dos with Choose Boot Image Backend.
+https://bbs.archlinux.org/viewtopic.php?id=173748
+[SOLVED] Booting archlinux.img from NTFS with SysLinux
+
 2. Boot arch loop device(R5) via grub4dos from Win7 hard disk.
 3. Run qemu with grahics determined at R3,4 steps.
 4. Quemu guest should be Win7 loop device.
