@@ -19,4 +19,30 @@ https://bbs.archlinux.org/viewtopic.php?id=173748
 In summary - 
 01 - 2 loop files at Wni7 drive - 1) arch; 2) Win7.
 02 - May be need patch grub4dos for Choose Boot Image Backend.
+03 - Viewing display in virt-viewer by vnc or SPICE.
+One can add the -vnc :X option to have QEMU redirect the VGA display to the VNC session
+qemu-system-x86_64 -vnc :0
+
+https://github.com/virtio-win/kvm-guest-drivers-windows/issues/591
+Unfortunately viogpu was not designed to work on Win7
+https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/
+
+    virtio vga or virtio gpu, if your guest has drivers
+    qxl vga, if your guest has drivers
+    bochs display device, when using UEFI
+    standard VGA
+
+04. Send reset to qemu quest.
+http://www.ossportal.ru/technologies/kvm/blogs/151
+echo "info blockstats" > montest.in
+
+http://flashboot.blogspot.com/2012/01/windows7.html
+copy BCD.bck /boot/
+copy /bootmgr /boot/
+
+https://rmprepusb.com/tutorials/021-guide-to-grub4dos/021d-grub4dos-internals/
+
+No remote control for grub4dos, need to write Windows Daemon for to Change default int menu.lst.
+
+https://superuser.com/questions/599785/can-i-make-syslinux-load-a-root-fs-from-an-image-file-on-an-ntfs-partition
 
